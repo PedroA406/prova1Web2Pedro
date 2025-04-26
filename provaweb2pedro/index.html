@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+  <title>Catálogo Digital</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+
+
+    
+  <h1>Cadastro Catálogo Digital</h1>
+
+  <!-- Formulário para adicionar ou editar itens -->
+  <div class="form-container">
+    <input type="text" id="nome" placeholder="Nome do Produto" required>
+    <input type="number" id="preco" placeholder="Preço do Produto" required>
+    <textarea id="descricao" placeholder="Descrição do Produto" rows="4" required></textarea>
+    <input type="text" id="cep" placeholder="CEP" required>
+    <input type="text" id="endereco" placeholder="Endereço" disabled>
+    <button id="adicionarBtn" onclick="adicionarItem()">Adicionar Item</button>
+    <div id="errorMessage" class="error"></div>
+  </div>
+
+  <!-- Lista de itens -->
+   <h1>CATÁLOGO/CARDÁPIO</h1>
+   <br>
+  <ul id="catalog-list" class="catalog-list"></ul>
+
+
+  <script src='script.js'></script>
+  
+</body>
+</html>
